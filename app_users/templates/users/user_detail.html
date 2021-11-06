@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>личный кабинет: {{object.username}}</title>
+</head>
+<body>
+<h2>Личный кабинет</h2>
+<h4>пользователь: {{object.username}}</h4>
+<p>имя: {{object.first_name}}</p>
+<p>баланс: {{object.profile.balance}}</p>
+<p>статус: {{object.profile.status}}</p>
+<a href="{% url 'add_balance' pk=object.pk %}">пополнить баланс</a>
+<br>
+<a href="{% url 'cart' pk=object.pk %}">перейти в корзину</a>
+<br>
+<a href="{% url 'items' %}">вернуться к товарам</a>
+</body>
+</html>
