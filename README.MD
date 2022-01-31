@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 
 #### Запуск
-Находясь в папке проекта выполните команды:
+Находясь в папке проекта, выполните команды:
 ```
 manage.py migrate
 manage.py runserver
